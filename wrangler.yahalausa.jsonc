@@ -1,0 +1,63 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sink-yahalausa",
+  "main": ".output/server/index.mjs",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public",
+    "html_handling": "drop-trailing-slash"
+  },
+  "routes": [
+    {
+      "pattern": "go.yahalausa.net",
+      "custom_domain": true
+    }
+  ],
+  "workers_dev": false,
+  "preview_urls": false,
+  "compatibility_date": "2025-05-08",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "keep_vars": true,
+  "vars": {
+    "NUXT_CF_ACCOUNT_ID": "fb14df399f96dc019b8a82cb48788654",
+    "NUXT_HOME_URL": "https://go.yahalausa.net"
+  },
+  "upload_source_maps": true,
+  "observability": {
+    "logs": {
+      "enabled": true
+    },
+    "traces": {
+      "enabled": true
+    }
+  },
+  "ai": {
+    "binding": "AI",
+    "remote": true
+  },
+  "analytics_engine_datasets": [
+    {
+      "binding": "ANALYTICS",
+      "dataset": "sink"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "preview_id": "96dd4c82cd7e4ecc91b2c8f76ba44f78",
+      "id": "96dd4c82cd7e4ecc91b2c8f76ba44f78"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "preview_bucket_name": "sink-yahalausa",
+      "bucket_name": "sink-yahalausa"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 0 * * *"]
+  }
+}
