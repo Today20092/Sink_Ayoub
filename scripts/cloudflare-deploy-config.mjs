@@ -4,7 +4,7 @@ import { parse, printParseErrorCode } from 'jsonc-parser'
 import { z } from 'zod'
 
 const rootDir = new URL('../', import.meta.url)
-const sourcePath = new URL('wrangler.jsonc', rootDir)
+const sourcePath = new URL(process.env.DEPLOY_WRANGLER_CONFIG ?? 'wrangler.jsonc', rootDir)
 const envPath = new URL('.env', rootDir)
 const outputPath = new URL('wrangler.deploy.jsonc', rootDir)
 

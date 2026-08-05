@@ -22,7 +22,7 @@
   "keep_vars": true,
   "vars": {
     "NUXT_CF_ACCOUNT_ID": "fb14df399f96dc019b8a82cb48788654",
-    "NUXT_HOME_URL": "https://go.yahalausa.net"
+    "NUXT_HOME_URL": ""
   },
   "upload_source_maps": true,
   "observability": {
@@ -48,6 +48,14 @@
       "binding": "KV",
       "preview_id": "96dd4c82cd7e4ecc91b2c8f76ba44f78",
       "id": "96dd4c82cd7e4ecc91b2c8f76ba44f78"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sink-yahalausa",
+      "database_id": "c5aa3f6e-97ec-46f0-8f7a-7cfc77ae573b",
+      "migrations_dir": "drizzle"
     }
   ],
   "r2_buckets": [
