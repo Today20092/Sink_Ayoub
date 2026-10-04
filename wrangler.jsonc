@@ -20,7 +20,7 @@
   "keep_vars": true,
   "vars": {
     "NUXT_CF_ACCOUNT_ID": "de011be818652cd288a0b1d934502de3",
-    "NUXT_HOME_URL": ""
+    "NUXT_PUBLIC_HOME_URL": ""
   },
   "upload_source_maps": true,
   "observability": {
