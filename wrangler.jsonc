@@ -11,6 +11,10 @@
     {
       "pattern": "go.alphabravomedia.co",
       "custom_domain": true
+    },
+    {
+      "pattern": "go.ayoubabed.xyz",
+      "custom_domain": true
     }
   ],
   "compatibility_date": "2025-05-08",
